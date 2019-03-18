@@ -20,6 +20,7 @@ public class MainApplication extends Application {
 			primaryStage.setTitle("登录界面");
 			primaryStage.setScene(new Scene(root));
 			primaryStage.show();
+			System.out.println("MainApplication");
 
 		} catch (Exception e) {
 			e.printStackTrace();
