@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="536.0" prefWidth="1177.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.qust.factory.controller.StoreController">
+	<children>
+		<TableView fx:id="tableView" layoutX="223.0" layoutY="33.0" prefHeight="423.0" prefWidth="905.0">
+			<columns>
+				<TableColumn fx:id="tc_id" editable="false" prefWidth="50.0" sortable="false" text="ID" />
+				<TableColumn fx:id="tc_material" editable="false" prefWidth="200.0" sortable="false" text="物料名称" />
+                <TableColumn fx:id="tc_number" editable="false" prefWidth="200.0" sortable="false" text="数量" />
+                <TableColumn fx:id="tc_user" editable="false" prefWidth="200.0" sortable="false" text="人物" />
+			</columns>
+		</TableView>
+		<Button fx:id="btn_refresh" layoutX="483.0" layoutY="471.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="212.0" text="刷新" />
+	      <Label fx:id="tv_plastic" layoutX="33.0" layoutY="105.0" text="塑料颗粒" />
+	      <Label fx:id="tv_box" layoutX="33.0" layoutY="151.0" text="盒子" />
+	      <Label fx:id="tv_bag" layoutX="33.0" layoutY="206.0" text="袋子" />
+	      <Label fx:id="tv_model" layoutX="33.0" layoutY="261.0" text="注塑半成品" />
+	      <Label fx:id="tv_print" layoutX="33.0" layoutY="326.0" text="印刷半成品" />
+	      <Label fx:id="tv_pack" layoutX="33.0" layoutY="381.0" text="包装成品" />
+	</children>
+</AnchorPane>

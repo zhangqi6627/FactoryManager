@@ -1,0 +1,34 @@
+package com.qust.factory.application;
+
+import com.qust.factory.bean.User;
+import com.qust.factory.controller.PrintController;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+public class PrintApplication extends Application{
+	private User mUser;
+	public PrintApplication(User user) {
+		this.mUser = user;
+	}
+	@Override
+	public void start(Stage primaryStage) throws Exception {
+		try {
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/qust/factory/scene/PrintScene.fxml"));
+			Parent root = loader.load();
+			primaryStage.setTitle("印刷车间管理界面");
+			primaryStage.setScene(new Scene(root));
+			primaryStage.show();
+			Object controller = loader.getController();
+			if(controller instanceof PrintController) {
+				System.out.println("ModelApplication->start() mUser:"+mUser);
+				((PrintController)controller).setUser(mUser);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="449.0" prefWidth="1177.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.qust.factory.controller.PrintController">
+	<children>
+		<TableView fx:id="tableView" layoutX="50.0" layoutY="30.0" prefHeight="351.0" prefWidth="1078.0">
+			<columns>
+				<TableColumn fx:id="tc_id" editable="false" prefWidth="50.0" sortable="false" text="ID" />
+				<TableColumn fx:id="tc_orderId" editable="false" prefWidth="100.0" sortable="false" text="订单编号" />
+				<TableColumn fx:id="tc_productName" editable="false" prefWidth="100.0" sortable="false" text="产品名称" />
+				<TableColumn fx:id="tc_productType" editable="false" prefWidth="100.0" sortable="false" text="产品类型" />
+				<TableColumn fx:id="tc_productColor" editable="false" prefWidth="100.0" sortable="false" text="颜色" />
+				<TableColumn fx:id="tc_productNumber" editable="false" prefWidth="100.0" sortable="false" text="数量" />
+				<TableColumn fx:id="tc_progress" editable="false" prefWidth="100.0" sortable="false" text="进度" />
+
+                <TableColumn fx:id="tc_receive" editable="false" prefWidth="150" sortable="false" text="领料" visible="true" />
+				<TableColumn fx:id="tc_start" editable="false" prefWidth="100" sortable="false" text="开始印刷" visible="true" />
+				<TableColumn fx:id="tc_finish" editable="false" prefWidth="100.0" sortable="false" text="完成印刷" visible="true" />
+			</columns>
+		</TableView>
+		<Button fx:id="btn_refresh" layoutX="483.0" layoutY="392.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="212.0" text="刷新" />
+	</children>
+</AnchorPane>

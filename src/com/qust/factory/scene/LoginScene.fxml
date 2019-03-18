@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="248.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.qust.factory.controller.LoginController">
+	<children>
+		<TextField fx:id="tf_username" layoutX="129.0" layoutY="70.0" />
+		<PasswordField fx:id="pf_password" layoutX="129.0" layoutY="113.0" />
+		<Text layoutX="37.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="用户名:" />
+		<Text layoutX="37.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密码:" />
+		<Button fx:id="btn_login" layoutX="85.0" layoutY="167.0" mnemonicParsing="false" text="登录" onAction="#onLogin" />
+		<Button fx:id="btn_cancel" layoutX="195.0" layoutY="167.0" mnemonicParsing="false" text="取消" onAction="#onCancel" />
+	</children>
+</AnchorPane>
